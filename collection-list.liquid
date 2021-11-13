@@ -1,0 +1,33 @@
+{% comment %}All code to be added to collection-list.liquid {% endcomment %}
+
+{% comment %}
+Add the following code from line 7 to 13 before any other code 
+{% endcomment %}
+
+{% if section.settings.collection_title == true %} 
+  <style>
+    .collection-grid-item__title {
+      display: none;
+    }
+  </style>
+{% endif %} 
+
+{% comment %}
+Locate the following schema
+  ],
+  "blocks": [
+    {
+      "type": "featured_collection",
+      "name": {
+        "cs": "Kolekce",
+        "da": "Kollektion",
+        "de": "Kategorie",
+        "en": "Collection",
+And above this, insert the code from line 29 to 33
+{% endcomment %}
+
+{
+  "type": "checkbox",
+  "id": "collection_title",
+  "label": "Hide Collection title on images"
+}
